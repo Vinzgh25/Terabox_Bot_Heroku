@@ -39,7 +39,7 @@ def webhook():
 # Fetch User Member or Not
 def is_member(user_id):
     try:
-        member_status = bot.get_chat_member('-1002166457568', user_id)
+        member_status = bot.get_chat_member('', user_id)
         return member_status.status in ['member', 'administrator', 'creator']
     except:
         return False
@@ -136,8 +136,8 @@ def send_welcome(message):
 
     inline_keyboard = telebot.types.InlineKeyboardMarkup()
     inline_keyboard.row(
-     telebot.types.InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url=f"https://t.me/DEVELOPER_RADHA"),
-     telebot.types.InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="tg://user?id=6335525003")
+     telebot.types.InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url=f"https://t.me/nonplayablcharacter"),
+     telebot.types.InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="tg://user?id=1487943213")
     )
 
     bot.send_message(
